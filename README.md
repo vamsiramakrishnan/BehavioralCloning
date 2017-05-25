@@ -51,6 +51,7 @@ Input Sources  | Keyboard, Touch Pad, Mouse, Joystick
 Tracks         | Track-1, Track-2
 Direction      | Clockwise and Anti-Clockwise
 Special Cases  | Recovery Driving, Smooth Turns only, Stock Udacity Data 
+Size of Dataset| ~37,000
 
 <p align="center">
 <img src= "Udacity_StockData.png" width="750"/>
@@ -176,3 +177,10 @@ Optimizer Type       | Adam                    | Chosen from http://sebastianrud
 <img src= "run2.gif" width="1000"/>
 </p>
 
+## Observation and Learning 
+* Pandas Dataframe - Sample is extremely handy in picking a weighted random sample. 
+* Too many dropouts can sometimes be counter-productive.
+* Wasted a lot of time in trying to figure out why the model wasn't performing well and this was due to the gaussian blur perturbation that converted images to float. 
+* The keyboard data though noisy didnt need filtration. Filtering the steering values lead to slower responses in sharp turns.
+* Image data generators were a life saver when it came to handling data in batches, sharing load between GPU and CPU. 
+* Recovery driving training is only partial as we don't control the direction, throttle or speed just the steering. However that is a topic for the future. To plug in the steering and throttle based closed loop PI based speed controller. 
