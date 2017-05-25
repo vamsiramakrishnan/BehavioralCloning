@@ -4,7 +4,8 @@ Tutorial for building a model that generates steering angle based on image input
 ### Exploratory Visualization of Dataset
 * Pandas + SeaBorn + MatPlotLib to create , load and append dataset from dataframe
 * Visualization to understand the distribution and quality of data. 
-
+* Distribution Plot to see the spread and quantity of data
+* Time Series Plot to understand the quality of data. ( To see noise to determine if filters are required)
 <p align="center">
 <img src= "Track1_SteeringAngle_Dist.png" width="500"/>
 </p>
