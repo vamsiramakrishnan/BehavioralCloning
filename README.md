@@ -49,13 +49,18 @@ These steps increase the challenge and generalization capability by creating har
 
 ### Define model architecture
 #### Data Pre-processing steps
-  * Normalization through feature scaling
-  * Cropping region of interest
-  * Resize image to increase model performance
+ * Normalization through feature scaling 
+ * Cropping region of interest
+ * Resize image to increase model performance
+  
 #### Salient Features of Model
  * Batch Normalization before every activation
  * Overfitting prevention Dropouts and batch norm
- * Use NVIDIA End to End Model architecture and train from scratch 
+ * NVIDIA End to End Model architecture and train from scratch
+<p align="center">
+<img src= "EndToEnd_NVIDIA.png" width="1500"/>
+</p>
+
 ### Setup Model Training Pipeline
 * Hyperparameters- Epochs , Steps per Epoch and Learning Rate decided based on search epochs on subset of data
 * Greedy best save and checkpoint implementation.
