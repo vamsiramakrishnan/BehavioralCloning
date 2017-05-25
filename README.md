@@ -81,14 +81,15 @@ These steps increase the challenge and generalization capability by creating har
 - **Greedy best save** and **checkpoint** implementation.
 - **Metrics** is a purely **loss** based. Since the label(Steering angle) here is numeric and non-categorical , RMS Loss is used as the loss type. 
 
-Hyperparameter Name  | Value
--------------------- |--------------
-Epochs               | 10
-Learning Rate        | 1e-4
-Batch Size           | 32
-Metric               | Loss
-Loss Type            | Root Mean Squared Error
-Optimizer Type       | Adam 
+Hyperparameter Name  | Value                   |     Comments     
+---------------------|-------------------------|--------------------------------------------
+Epochs               | 10                      | Additional Epochs for special problem areas
+Learning Rate        | 1e-4                    | Default Learning rate of 1e-2 unsuitable results
+Batch Size           | 32                      | Chosen due to best trade off between CPU & GPU performance
+Metric               | Loss                    | Accuracy is unsuitable as exact steering angle prediction is not what matters
+Loss Type            | Root Mean Squared Error | As loss is non-categorical closeness to predicted angle is what matters
+Optimizer Type       | Adam                    | Chosen from http://sebastianruder.com/optimizing-gradient-descent/index.html
+
 
 ### Save and Deploy Model
 * Save using **json**, **hdf5** model.
