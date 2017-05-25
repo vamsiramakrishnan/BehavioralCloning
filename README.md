@@ -15,6 +15,9 @@ Tutorial for building a model that generates steering angle based on image input
 </p>
 
 ### Data Collection based on Shortcomings
+- Visualizing collected data from driving the simulator shows that the dataset looks entirely different for **Keyboard** and **Mouse**
+- So we pass the data through a **Savitzky Golay** filter that averages out the samples but maintains the 
+- Area = (Steering_angle x Time) this effectively filters out the noise without destroying the signal.
 * Udacity Simulator and Udacity provided data.  
 * Based on the histogram distribution plots collecting data by using certain driving styles (*Lesser data with large steering angles , then drive more on curves*, clockwise and anticlockwise )
 * After initial model save and testing driving and training in problem areas to improve model on subset of data.
