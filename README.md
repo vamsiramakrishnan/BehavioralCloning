@@ -169,10 +169,10 @@ Optimizer Type       | Adam                    | Chosen from http://sebastianrud
 
 ## Capture Video 
 <p align="center">
-<img src= "run1.gif" width="1500"/>
+<img src= "run1.gif" width="1000"/>
 </p>
 
 <p align="center">
-<img src= "run2.gif" width="1500"/>
+<img src= "run2.gif" width="1000"/>
 </p>
 
