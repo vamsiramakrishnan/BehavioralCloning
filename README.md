@@ -167,6 +167,11 @@ Optimizer Type       | Adam                    | Chosen from http://sebastianrud
 ### Save and Deploy Model
 * Save using **json**, **hdf5** model.
 
+## Capture Video 
 <p align="center">
 <img src= "run1.gif" width="1500"/>
+</p>
+
+<p align="center">
+<img src= "run2.gif" width="1500"/>
 </p>
