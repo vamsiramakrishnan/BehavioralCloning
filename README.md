@@ -14,9 +14,18 @@ Tutorial for building a model that generates steering angle based on image input
 </p>
 
 ### Data Collection based on Shortcomings
-* Udacity Simulator and Udacity provided data to gather more data. 
-* Based on the histogram distribution plots collecting data by using certain driving styles (*Lesser data with large steering angles , then drive more on curves*)
+* Udacity Simulator and Udacity provided data.  
+* Based on the histogram distribution plots collecting data by using certain driving styles (*Lesser data with large steering angles , then drive more on curves*, clockwise and anticlockwise )
 * After initial model save and testing driving and training in problem areas to improve model on subset of data.
+
+<p align="center">
+<img src= "CUdacity_StockData.png" width="500"/>
+</p>
+
+<p align="center">
+<img src= "Cw_vsACW.png" width="500"/>
+</p>
+
 
 ### Data Augmentation
 * Augmentation using Flipping, Translation from left and right camera images
