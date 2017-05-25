@@ -41,7 +41,7 @@ Tutorial for building a model that generates steering angle based on image input
 These steps increase the challenge and generalization capability by creating harder images for the model to train on. Below is an example of augmented and perturbed image batch that is linked with the image generator that generates images during model training on the go.
 
 <p align="center">
-<img src= "Sample_PreProcessed_Image_Batch.png" width="500"/>
+<img src= "Sample_PreProcessed_Image_Batch.png" width="1500"/>
 </p>
 
 ### Define model architecture
