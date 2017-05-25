@@ -93,42 +93,42 @@ These steps increase the challenge and generalization capability by creating har
  * Switched from ReLU to ELU for activations after reading this paper-https://arxiv.org/abs/1511.07289
  * NVIDIA End to End Model architecture and train from scratch
  
-Layer Name                   |Size                  |Number of Parameters
----------------------------------------------------------------------------
-cropping2d_1 (Cropping2D)    |(None, 90, 320, 3)        0         
-lambda_1 (Lambda)            |(None, 66, 200, 3)        0         
-lambda_2 (Lambda)            |(None, 66, 200, 3)        0         
-conv2d_1 (Conv2D)            |(None, 31, 98, 24)        1824      
-batch_normalization_1 (Batch |(None, 31, 98, 24)        96        
-elu_1 (ELU)                  |(None, 31, 98, 24)        0         
-conv2d_2 (Conv2D)            |(None, 14, 47, 36)        21636     
-batch_normalization_2 (Batch |(None, 14, 47, 36)        144       
-elu_2 (ELU)                  |(None, 14, 47, 36)        0         
-conv2d_3 (Conv2D)            |(None, 5, 22, 48)         43248     
-batch_normalization_3 (Batch |(None, 5, 22, 48)         192       
-elu_3 (ELU)                  |(None, 5, 22, 48)         0         
-conv2d_4 (Conv2D)            |(None, 3, 20, 64)         27712     
-batch_normalization_4 (Batch |(None, 3, 20, 64)         256       
-elu_4 (ELU)                  |(None, 3, 20, 64)         0         
-conv2d_5 (Conv2D)            |(None, 1, 18, 64)         36928     
-batch_normalization_5 (Batch |(None, 1, 18, 64)         256       
-elu_5 (ELU)                  |(None, 1, 18, 64)         0         
-flatten_1 (Flatten)          |(None, 1152)              0         
-dropout_1 (Dropout)          |(None, 1152)              0         
-dense_1 (Dense)              |(None, 1164)              1342092   
-batch_normalization_6 (Batch |(None, 1164)              4656      
-elu_6 (ELU)                  |(None, 1164)              0         
-dense_2 (Dense)              |(None, 100)               116500    
-batch_normalization_7 (Batch |(None, 100)               400       
-elu_7 (ELU)                  |(None, 100)               0         
-dense_3 (Dense)              |(None, 50)                5050      
-batch_normalization_8 (Batch |(None, 50)                200       
-elu_8 (ELU)                  |(None, 50)                0         
-dense_4 (Dense)              |(None, 10)                510       
-batch_normalization_9 (Batch |(None, 10)                40        
-elu_9 (ELU)                  |(None, 10)                0         
-dropout_2 (Dropout)          |(None, 10)                0         
-dense_5 (Dense)              |(None, 1)                 11        
+Layer Name                   |  Size                  | Number of Parameters
+-----------------------------|------------------------|--------------------
+cropping2d_1 (Cropping2D)    |  (None, 90, 320, 3)    |    0         
+lambda_1 (Lambda)            |  (None, 66, 200, 3)    |    0         
+lambda_2 (Lambda)            |  (None, 66, 200, 3)    |    0         
+conv2d_1 (Conv2D)            |  (None, 31, 98, 24)    |    1824      
+batch_normalization_1 (Batch |  (None, 31, 98, 24)    |    96        
+elu_1 (ELU)                  |  (None, 31, 98, 24)    |    0         
+conv2d_2 (Conv2D)            |  (None, 14, 47, 36)    |    21636     
+batch_normalization_2 (Batch |  (None, 14, 47, 36)    |    144       
+elu_2 (ELU)                  |  (None, 14, 47, 36)    |    0         
+conv2d_3 (Conv2D)            |  (None, 5, 22, 48)     |    43248     
+batch_normalization_3 (Batch |  (None, 5, 22, 48)     |    192       
+elu_3 (ELU)                  |  (None, 5, 22, 48)     |    0         
+conv2d_4 (Conv2D)            |  (None, 3, 20, 64)     |    27712     
+batch_normalization_4 (Batch |  (None, 3, 20, 64)     |    256       
+elu_4 (ELU)                  |  (None, 3, 20, 64)     |    0         
+conv2d_5 (Conv2D)            |  (None, 1, 18, 64)     |    36928     
+batch_normalization_5 (Batch |  (None, 1, 18, 64)     |    256       
+elu_5 (ELU)                  |  (None, 1, 18, 64)     |    0         
+flatten_1 (Flatten)          |  (None, 1152)          |    0         
+dropout_1 (Dropout)          |  (None, 1152)          |    0         
+dense_1 (Dense)              |  (None, 1164)          |    1342092   
+batch_normalization_6 (Batch |  (None, 1164)          |    4656      
+elu_6 (ELU)                  |  (None, 1164)          |    0         
+dense_2 (Dense)              |  (None, 100)           |    116500    
+batch_normalization_7 (Batch |  (None, 100)           |    400       
+elu_7 (ELU)                  |  (None, 100)           |    0         
+dense_3 (Dense)              |  (None, 50)            |    5050      
+batch_normalization_8 (Batch |  (None, 50)            |    200       
+elu_8 (ELU)                  |  (None, 50)            |    0         
+dense_4 (Dense)              |  (None, 10)            |    510       
+batch_normalization_9 (Batch |  (None, 10)            |    40        
+elu_9 (ELU)                  |  (None, 10)            |    0         
+dropout_2 (Dropout)          |  (None, 10)            |    0         
+dense_5 (Dense)              |  (None, 1)             |    11        
 
 <p align="center">
 <img src= "EndToEnd_NVIDIA.png" width="1500"/>
