@@ -80,5 +80,14 @@ These steps increase the challenge and generalization capability by creating har
 - **Hyperparameters**: **Epochs** , **Steps per Epoch** and **Learning Rate** decided based on search epochs on subset of data
 - **Greedy best save** and **checkpoint** implementation.
 - **Metrics** is a purely **loss** based. Since the label(Steering angle) here is numeric and non-categorical , RMS Loss is used as the loss type. 
+Hyperparameter Name  | Value
+------------- | -------------
+Epochs   | 10
+Learning Rate  | 1e-4
+Batch Size  | 32
+Metric  | Loss
+Loss Type | Root Mean Squared Error
+Optimizer Type | Adam 
+
 ### Save and Deploy Model
 * Save using **json**, **hdf5** model.
