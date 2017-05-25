@@ -168,5 +168,5 @@ Optimizer Type       | Adam                    | Chosen from http://sebastianrud
 * Save using **json**, **hdf5** model.
 
 <p align="center">
-<img src= "run1.mp4" width="1500"/>
+<img src= "run1.gif" width="1500"/>
 </p>
