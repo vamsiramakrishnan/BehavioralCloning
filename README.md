@@ -20,24 +20,25 @@ Tutorial for building a model that generates steering angle based on image input
 
 ### Data Augmentation
 * Augmentation using Flipping, Translation from left and right camera images
-* Reduce the time spent on data gathering through data augmentation techniques #### Data Perturbation to Increase Model Robustness
+* Reduce the time spent on data gathering through data augmentation techniques 
 
-#### Brightness Perturbation
-* Random perturbation of brightness of the image.
-#### Gaussian Noise
-* Blur filter with a random normal distribution across the image.
-#### Histogram Equalization
-* Can greatly help in the model learning the features quickly
-#### Colospace inversion
-* Increase the challenge and generalization capability by creating harder images for the model to train on. 
+### Data Perturbation to Increase Model Robustness
+  #### Brightness Perturbation
+  * Random perturbation of brightness of the image.
+  #### Gaussian Noise
+  * Blur filter with a random normal distribution across the image.
+  #### Histogram Equalization
+  * Can greatly help in the model learning the features quickly
+  #### Colospace inversion
+  * Increase the challenge and generalization capability by creating harder images for the model to train on. 
 ### Define model architecture
-* Data Pre-processing steps
-* Normalization through feature scaling
-* Cropping region of interest
-* Resize image to increase model performance
-* Batch Normalization before every activation
-* Overfitting prevention Dropouts and batch norm
-* Use NVIDIA End to End Model architecture and train from scratch 
+#### Data Pre-processing steps
+  * Normalization through feature scaling
+  * Cropping region of interest
+  * Resize image to increase model performance
+  * Batch Normalization before every activation
+  * Overfitting prevention Dropouts and batch norm
+  * Use NVIDIA End to End Model architecture and train from scratch 
 ### Setup Model Training Pipeline
 * Hyperparameters- Epochs , Steps per Epoch and Learning Rate decided based on search epochs on subset of data
 * Greedy best save and checkpoint implementation.
