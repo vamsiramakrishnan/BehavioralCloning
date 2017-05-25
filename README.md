@@ -19,11 +19,11 @@ Tutorial for building a model that generates steering angle based on image input
 - So we pass the data through a **Savitzky Golay** filter that averages out the samples but maintains the 
 - Area = (Steering_angle x Time) this effectively filters out the noise without destroying the signal.
 - Based on the histogram distribution plots collecting data by using certain driving styles.
-  - Data from Track 1 - Clock wise and anticlockwise (MAC & Windows)
-  - Data from Track 2 - Clock wise and anticlockwise (MAC & Windows)
+  - Data from **Track 1** - Clock wise and anticlockwise (**MAC & Windows**)
+  - Data from **Track 2** - Clock wise and anticlockwise (MAC & Windows)
   - Smooth Turn from both Tracks (MAC & Windows)
   - Recovery driving from both Tracks (MAC & Windows)
-  - Problem Areas in both tracks (MAC & Windows)
+  - **Problem Areas** in both tracks (MAC & Windows)
   - Keyboard and Mouse
 - After initial model save and testing driving and training in problem areas to improve model on subset of data.
 
@@ -34,8 +34,6 @@ Tutorial for building a model that generates steering angle based on image input
 <p align="center">
 <img src= "Cw_vsACW.png" width="750"/>
 </p>
-
-Combined Data
 
 
 ### Data Augmentation
@@ -69,7 +67,11 @@ These steps increase the challenge and generalization capability by creating har
 #### Salient Features of Model
  * Batch Normalization before every activation
  * Overfitting prevention Dropouts and batch norm
+ * Dropouts are implemented before the flatten layer and before the output layer with a 50% probability
+ * Tried by adding multiple dropouts but it did need seem to have an effect on improving validation losses.
+ * Switched from ReLU to ELU for activations after reading this paper-https://arxiv.org/abs/1511.07289
  * NVIDIA End to End Model architecture and train from scratch
+ 
 <p align="center">
 <img src= "EndToEnd_NVIDIA.png" width="1500"/>
 </p>
