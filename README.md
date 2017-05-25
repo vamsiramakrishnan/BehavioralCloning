@@ -175,3 +175,4 @@ Optimizer Type       | Adam                    | Chosen from http://sebastianrud
 <p align="center">
 <img src= "run2.gif" width="1500"/>
 </p>
+
