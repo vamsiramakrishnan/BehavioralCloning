@@ -29,18 +29,21 @@ Tutorial for building a model that generates steering angle based on image input
 
 
 ### Data Augmentation
-* Augmentation using Flipping, Translation from left and right camera images
+* Augmentation using **Flipping**, **Translation** from left and right camera images
 * Reduce the time spent on data gathering through data augmentation techniques 
 
 ### Data Perturbation to Increase Model Robustness
-  #### Brightness Perturbation
-  * Random perturbation of brightness of the image.
-  #### Gaussian Noise
-  * Blur filter with a random normal distribution across the image.
-  #### Histogram Equalization
-  * Can greatly help in the model learning the features quickly
-  #### Colospace inversion
-  * Increase the challenge and generalization capability by creating harder images for the model to train on. 
+  **Brightness Perturbation** : Random perturbation of brightness of the image.
+  ** Gaussian Noise ** : Blur filter with a random normal distribution across the image.
+  ** Adaptive Histogram Equalization** : Can greatly help in the model learning the features quickly
+  ** Colospace inversion** :  RBG to BGR colorspace change 
+  
+These steps increase the challenge and generalization capability by creating harder images for the model to train on. Below is an example of augmented and perturbed image batch that is linked with the image generator that generates images during model training on the go.
+
+<p align="center">
+<img src= "Sample_PreProcessed_Image_Batch.png" width="500"/>
+</p>
+
 ### Define model architecture
 #### Data Pre-processing steps
   * Normalization through feature scaling
