@@ -36,9 +36,10 @@ Tutorial for building a model that generates steering angle based on image input
   * Normalization through feature scaling
   * Cropping region of interest
   * Resize image to increase model performance
-  * Batch Normalization before every activation
-  * Overfitting prevention Dropouts and batch norm
-  * Use NVIDIA End to End Model architecture and train from scratch 
+#### Salient Features of Model
+ * Batch Normalization before every activation
+ * Overfitting prevention Dropouts and batch norm
+ * Use NVIDIA End to End Model architecture and train from scratch 
 ### Setup Model Training Pipeline
 * Hyperparameters- Epochs , Steps per Epoch and Learning Rate decided based on search epochs on subset of data
 * Greedy best save and checkpoint implementation.
