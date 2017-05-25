@@ -20,7 +20,7 @@ Tutorial for building a model that generates steering angle based on image input
 * After initial model save and testing driving and training in problem areas to improve model on subset of data.
 
 <p align="center">
-<img src= "CUdacity_StockData.png" width="500"/>
+<img src= "Udacity_StockData.png" width="500"/>
 </p>
 
 <p align="center">
