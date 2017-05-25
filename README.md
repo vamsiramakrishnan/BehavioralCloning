@@ -7,11 +7,11 @@ Tutorial for building a model that generates steering angle based on image input
 * Distribution Plot to see the spread and quantity of data
 * Time Series Plot to understand the quality of data. ( To see noise to determine if filters are required)
 <p align="center">
-<img src= "Track1_SteeringAngle_Dist.png" width="500"/>
+<img src= "Track1_SteeringAngle_Dist.png" width="750"/>
 </p>
 
 <p align="center">
-<img src= "Track1vsTrack2.png" width="500"/>
+<img src= "Track1vsTrack2.png" width="750"/>
 </p>
 
 ### Data Collection based on Shortcomings
@@ -26,7 +26,6 @@ Tutorial for building a model that generates steering angle based on image input
 <p align="center">
 <img src= "Cw_vsACW.png" width="750"/>
 </p>
-
 
 ### Data Augmentation
 * Augmentation using **Flipping**, **Translation** from left and right camera images
