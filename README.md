@@ -1,6 +1,6 @@
 # BehavioralCloning
 Tutorial for building a model that generates steering angle based on image input. A brief summary of the workflow. 
-## Getting around the repo
+## 1. Getting around the repo
 * Model_Preprocessing.ipynb is the scratchpad that was used to try and experiment with building the model.It helps us extract and preprocess information and combine it. 
 * Model.py is the Keras Model that contains 
     * Model 
@@ -9,7 +9,14 @@ Tutorial for building a model that generates steering angle based on image input
 * The data is obatined by running the simulator / stock data given by udacity itself. 
 ### Data/File Structure 
 * The data is of the format ** Drive_Log.csv** which contains the path information where the images are sampled from the video and the actual images are stored in **IMG**. Each image is timestamped. 
-
+## 2. Workflow 
+* Simulator - Generate Data in Training Mode
+* Analyze, Augment and PreProcess Data offline
+* Get more Data if required.
+* Upload Data to Cloud - AWS Machine Learning system . 
+* Run the Model Training. 
+* Download Model and run simulator in autonomous mode. 
+* Repeat process 
 ## Summary of Steps
 ### Exploratory Visualization of Dataset
 * Pandas + SeaBorn + MatPlotLib to create , load and append dataset from dataframe
