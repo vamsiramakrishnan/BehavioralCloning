@@ -4,7 +4,8 @@ Tutorial for building a model that generates steering angle based on image input
 ### Exploratory Visualization of Dataset
 * Pandas + SeaBorn + MatPlotLib to create , load and append dataset from dataframe
 * Visualization to understand the distribution and quality of data 
-https://github.com/vamsiramakrishnan/BehavioralCloning/blob/master/Track1_SteeringAngle_Dist.png?raw=true
+![Alt Text] (https://github.com/vamsiramakrishnan/BehavioralCloning/blob/master/Track1_SteeringAngle_Dist.png?raw=true)
+
 ### Data Collection based on Shortcomings
 * Udacity Simulator and Udacity provided data to gather more data. 
 * Based on the histogram distribution plots collecting data by using certain driving styles (*Lesser data with large steering angles , then drive more on curves*)
