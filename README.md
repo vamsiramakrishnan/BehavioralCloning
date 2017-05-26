@@ -194,4 +194,8 @@ Optimizer Type       | Adam                    | Chosen from http://sebastianrud
 * Wasted a lot of time in trying to figure out why the model wasn't performing well and this was due to the gaussian blur perturbation that converted images to float. 
 * The keyboard data though noisy didnt need filtration. Filtering the steering values lead to slower responses in sharp turns.
 * Image data generators were a life saver when it came to handling data in batches, sharing load between GPU and CPU. 
-* Recovery driving training is only partial as we don't control the direction, throttle or speed just the steering. However that is a topic for the future. To plug in the steering and throttle based closed loop PI based speed controller. 
+* Recovery driving training is only partial as we don't control the direction, throttle or speed just the steering. However that is a topic for the future. To plug in the steering and throttle based closed loop PI based speed controller.
+
+## 7. Further aspirations 
+* Optimize the learning process - Use the model driving the vehicle to iteratively generate data for further model training. 
+* Increase the challenge in driving - Single lane driving based on direction, adversarial agents, pedestrians and traffic to understand model performance. 
