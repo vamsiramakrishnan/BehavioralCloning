@@ -10,6 +10,7 @@ Tutorial for building a deep learning model that generates steering angle based 
 ![environment.yml](https://github.com/vamsiramakrishnan/BehavioralCloning/blob/master/environment.yml)
 2. Cloud Environment - This is a ![medium post](https://medium.com/@vamsiramakrishnan/setup-a-cloud-based-machine-learning-system-from-scratch-aws-ec2-g-2x2-9216449d558d) written to help you with the cloud based environment setup.
 3. Clone this repository to both the cloud and the local environment![Behavioral Cloning Repo](https://github.com/udacity/CarND-Behavioral-Cloning-P3).
+4. Simulator Repo - ![Link](https://github.com/udacity/self-driving-car-sim) 
 ## 2. Getting around the repo
 * Model_Preprocessing.ipynb is the scratchpad that was used to try and experiment with building the model.It helps us extract and preprocess information and combine it. 
 * Model.py is the Keras Model that contains 
