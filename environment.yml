@@ -1,4 +1,4 @@
-name: carnd-term1
+name: DeepLearningEnv
 channels:
 - defaults
 dependencies:
